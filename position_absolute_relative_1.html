@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+    }
+
+    .main {
+        width: 100vw;
+        height: 100vh;
+        background-color: aqua;
+        display: grid;
+        place-items: center;
+    }
+
+    .first {
+        width: 75%;
+        height: 75%;
+        background-color: #02c2c2;
+        display: grid;
+        place-items: center;
+
+    }
+
+    .second {
+        width: 75%;
+        height: 75%;
+        background-color: #047d7d;
+        display: grid;
+        place-items: center;
+        position: relative;
+    }
+
+
+    .third {
+        width: 75%;
+        height: 75%;
+        background-color: #044848;
+
+
+
+    }
+
+    .box {
+        height: 25px;
+        width: 25px;
+        padding: 40px;
+        display: inline-block;
+        color: white;
+        padding: 45px;
+    }
+
+    #box1 {
+        background-color: red;
+
+        /* position: relative; */
+        /* top: 25px; */
+        /* right: 20px; */
+
+    }
+
+    /* Postion absolute is working with mention parent class postion relative. */
+
+    #box2 {
+        background-color: #66ff00;
+        /* position: relative; */
+        /* z-index: 2; */
+    }
+
+    #box3 {
+        background-color: #1900ff;
+        /* position: relative; */
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        z-index: 1;
+    }
+
+    #box4 {
+        background-color: rgb(0, 94, 255);
+    }
+
+    #box5 {
+        background-color: #080808f1;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="first">
+            <div class="second">
+                <div class="third">
+                    <div class="box" id="box1">box1</div>
+                    <div class="box" id="box2">box2</div>
+                    <div class="box" id="box3">box3</div>
+                    <div class="box" id="box4">box4</div>
+                    <div class="box" id="box5">box5</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
